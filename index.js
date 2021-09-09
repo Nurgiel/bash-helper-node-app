@@ -25,7 +25,7 @@ const initKeyEvents = () => {
       mainTable.moveDn()
       updateConsole()
     }
-    if (key.ctrl && key.name === "c" || key.name === "escape") {
+    if (key.ctrl && key.name === "c" || key.name === "q" || key.name === "escape") {
       exit()
     }
     if (key.ctrl && key.name === "s") {

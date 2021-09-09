@@ -19,7 +19,7 @@ const mainTableOptions = {
 };
 
 const texts = {
-  ctrlC: chalk`Press {bold {rgb(0, 153, 255) Ctrl+C}} or {bold {rgb(0, 153, 255) ESC}} to Exit`,
+  ctrlC: chalk`Press {bold {rgb(0, 153, 255) Ctrl+C}}, {bold {rgb(0, 153, 255) Q}} or {bold {rgb(0, 153, 255) ESC}} to Exit`,
   ctrlS: chalk`Press {bold {rgb(0, 153, 255) Ctrl+S}} to Show Command`,
 };
 
