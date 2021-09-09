@@ -158,9 +158,18 @@ class TableLogData {
             : color(" " + " ".repeat(this.lengths[key.key]) + " ");
         })
         .join(`${shape[10]}`);
-      console.log(
-        chalk.rgb(...convertRgb(colorShape))`${shape[10]}${row}${shape[10]}`
-      );
+      // section
+      if (item.type == "section") {
+        console.log(
+          chalk.rgb(
+            ...convertRgb(colorShape)
+          )`${shape[3]}${shape[9]}${midTable}${shape[9]}${shape[5]}`
+        );
+      } else {
+        console.log(
+          chalk.rgb(...convertRgb(colorShape))`${shape[10]}${row}${shape[10]}`
+        );
+      }
     });
     // bot
     const botTable = keys

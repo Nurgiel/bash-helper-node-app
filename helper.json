@@ -1,0 +1,130 @@
+[
+    {
+        "title": "Docker Up",
+        "description": "docker-compose up -d",
+        "command": "docker-compose up -d"
+    },
+    {
+        "title": "Docker Down",
+        "description": "docker-compose down",
+        "command": "docker-compose down"
+    },
+    {
+        "title": "Docker PS",
+        "description": "docker ps --format '...'",
+        "command": "docker ps --format 'table {{.Names}} {{.ID}} {{.Size}} {{.Status}}'"
+    },
+    {
+        "title": "Docker Inspect",
+        "description": "docker inspect --format='...' $(docker ps -q)",
+        "command": "docker inspect --format='{{.Name}} :: {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -q)"
+    },
+    {
+        "title": "Docker Prune",
+        "description": "docker volume prune -f",
+        "command": "docker volume prune -f"
+    },
+    {
+        "type": "section"
+    },
+    {
+        "title": "ece-docker",
+        "description": "./vendor/bin/ece-docker",
+        "command": "./vendor/bin/ece-docker"
+    },
+    {
+        "title": "glist",
+        "description": "git diff-tree --no-commit-id --name-only -r",
+        "command": "git diff-tree --no-commit-id --name-only -r"
+    },
+    {
+        "title": "glog",
+        "description": "git log --follow -p",
+        "command": "git log --follow -p"
+    },
+    {
+        "title": "m1bash",
+        "description": "docker exec -it mageone_web /bin/bash",
+        "command": "docker exec -it mageone_web /bin/bash"
+    },
+    {
+        "title": "m1bashdb",
+        "description": "docker exec -it mageone_mysql /bin/bash",
+        "command": "docker exec -it mageone_mysql /bin/bash"
+    },
+    {
+        "title": "m1log",
+        "description": "tail -f -n 0 ... | grep -Ev (simplexml|...)",
+        "command": "tail -f -n 0 www/var/log/exception.log logs/error.log www/var/log/system.log | grep -Ev '(simplexml|SimpleXMLElement|implements Countable)'"
+    },
+    {
+        "title": "m2bash",
+        "description": "bin/magento-docker bash",
+        "command": "bin/magento-docker bash"
+    },
+    {
+        "title": "m2bashdb",
+        "description": "docker exec -it shark-gaming-systems-a-s_db_1 bin/bash",
+        "command": "docker exec -it shark-gaming-systems-a-s_db_1 bin/bash"
+    },
+    {
+        "title": "mbuild",
+        "description": "docker-compose run --rm build cloud-build",
+        "command": "docker-compose run --rm build cloud-build"
+    },
+    {
+        "title": "mc",
+        "description": "magento-cloud",
+        "command": "magento-cloud"
+    },
+    {
+        "title": "mdeploy",
+        "description": "docker-compose run --rm deploy cloud-deploy",
+        "command": "docker-compose run --rm deploy cloud-deploy"
+    },
+    {
+        "title": "mgc",
+        "description": "magento-cloud",
+        "command": "magento-cloud"
+    },
+    {
+        "title": "migrate",
+        "description": "sudo bin/magento migrate:data ../app/code/Vendor/Migration/etc/1.9.4.5/config.xml",
+        "command": "sudo bin/magento migrate:data /home/nurgiel/Desktop/shark-gaming-systems-a-s/app/code/Vendor/Migration/etc/1.9.4.5/config.xml"
+    },
+    {
+        "title": "sshintegration",
+        "description": "ssh hvyivtycpbcz2-integration-5ojmyuq--mymagento@ssh.eu-3.magento.cloud",
+        "command": "ssh hvyivtycpbcz2-integration-5ojmyuq--mymagento@ssh.eu-3.magento.cloud"
+    },
+    {
+        "title": "sshintegration2",
+        "description": "ssh hvyivtycpbcz2-integration2-hohc4oi--mymagento@ssh.eu-3.magento.cloud",
+        "command": "ssh hvyivtycpbcz2-integration2-hohc4oi--mymagento@ssh.eu-3.magento.cloud"
+    },
+    {
+        "title": "sshm1prod",
+        "description": "ssh sharkgaming_dk@phhw-200101.cust.powerhosting.dk -i ~/.ssh/id_rsa -p 15873",
+        "command": "ssh sharkgaming_dk@phhw-200101.cust.powerhosting.dk -i ~/.ssh/id_rsa -p 15873"
+    },
+    {
+        "title": "sshm1staging",
+        "description": "ssh sharkgaming@sharkgaming.vconnect.systems -i ~/.ssh/id_rsa",
+        "command": "ssh sharkgaming@sharkgaming.vconnect.systems -i ~/.ssh/id_rsa"
+    },
+    {
+        "title": "sshprod",
+        "description": "ssh 1.ent-hvyivtycpbcz2-production-vohbr3y@ssh.eu-3.magento.cloud",
+        "command": "ssh 1.ent-hvyivtycpbcz2-production-vohbr3y@ssh.eu-3.magento.cloud"
+    },
+    {
+        "title": "sshstaging",
+        "description": "ssh 1.ent-hvyivtycpbcz2-staging-5em2ouy@ssh.eu-3.magento.cloud",
+        "command": "ssh 1.ent-hvyivtycpbcz2-staging-5em2ouy@ssh.eu-3.magento.cloud"
+    },
+    {
+        "title": "unstage",
+        "description": "git reset --soft HEAD~1",
+        "command": "git reset --soft HEAD~1"
+    }
+]
